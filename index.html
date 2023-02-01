@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomy Flower</title>
+
+    <!--Font awesome link-->
+    <script src="https://use.fontawesome.com/94e0911e99.js"></script>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="Style.css">
+    
+    <!--Cart script-->
+    <script>
+      var data=0;
+      document.getElementById("cart").innerHTML=data;
+      function cart(){
+        data=data+1;
+        document.getElementById("cart").innerHTML=data;
+      }
+    </script>
+
+</head>
+<body>
+  <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      
+    <img id="Logo" src="Assest/Images/Logo.png" alt="">
+    <h1>Bloomy Flower</h1>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shop Here
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
+              <a class="dropdown-item" href="Flower Bunches.html">Flower Bunches</a>
+              <a class="dropdown-item" href="Flowers in a Box.html">Flowers in a Box</a>
+              <a class="dropdown-item" href="Flowers in Vase.html">Flowers in Vase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <li class="nav-item" id="icons">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item" id="icons">
+          <a class="nav-link" href="#wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item" id="icons">
+          <a class="nav-link" href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a></a>
+        </li>
+      </div>
+    </nav>
+
+  <!--Banner-->
+  <style>
+    @media only screen and (max-width: 600px) {
+      #home {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 50vh;
+    background: url(Assest/Images/Image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+}  
+  </style>
+  <section id="home">
+    <div>
+      <h3>FRESH FLOWERS</h3>
+      <span>NATURAL AND BEAUTIFUL FLOWERS</span><br>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>   
+
+  <!--About us-->
+  <div class="container" id="about">
+    <h2>ABOUT US</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Hi, 
+          <br> Iam Rubitha Devi P</h3>
+      </div>
+      <div class="col-md-6">
+        <p>‘Bloomy Flower’ in Coimbatore is open and conveying seven days, 365 days a year! We are focused on fullfilling the needs of the clients. 
+          Accordingly, the flower bunch remains fresher for longer after it’s been conveyed to the location we’re given. 
+          And keeping in mind that being transported, the flowers are in a sheltered place and kept at a cool temperature in our vans.
+          We trust that we’ll continue attracting new clients to us by offering assorted variety, which implies an extraordinary assortment of flowers, 
+          inflatables, and champagne. 
+          Our assorted variety likewise incorporates diverse sorts of flower courses of action for a wide range of events.
+          To the extent flowers go, we have something for any taste. Orchids, lilies, sunflowers, roses, tulips, thus considerably more, 
+          can be found on our site and, after that, conveyed to the doorstep of a companion, relative, friend, or family member of yours.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!--Feature section-->
+  <section id="feature" class="p1">
+    <div id="box">
+      <img src="Assest/Images/Free shipping.jpg" alt="">
+      <h6>Free Shipping</h6>
+    </div>
+    <div id="box">
+      <img src="Assest/Images/Happy Sale.jpg" alt="">
+      <h6>Happy Sale</h6>
+    </div>
+    <div id="box">
+      <img src="Assest/Images/Online order.jpg" alt="">
+      <h6>Online Order</h6>
+    </div>
+    <div id="box">
+      <img src="Assest/Images/Save Money.jpg" alt="">
+      <h6>Save Money</h6>
+    </div>
+    <div id="box">
+      <img src="Assest/Images/Return.jpg" alt="">
+      <h6>No Return</h6>
+    </div>  
+  </section>  
+
+<!--Promises-->
+  <div class="container" id="promises">
+    <h2>Bloomy Flower Promises</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="Assest/Images/Fresh.png" alt="">
+        <p>100% Freshness Upto 4 Days</p>
+      </div>
+      <div class="col-md-4">
+        <img src="Assest/Images/Heart.png" alt="">
+        <p>Made with Pure Hearts</p>
+      </div>
+      <div class="col-md-4">
+        <img src="Assest/Images/Happiness.png" alt="">
+        <p>Creating Amazing Experiences</p>
+      </div>
+    </div>
+    </div>
+
+  <!--Shop here-->
+    <div class="container" id="shop">
+    <h2>Shop Here</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="Flower Bunches.html"><img src="Assest/Images/Flower Bunches/Logo.webp" alt=""></a>
+        <h6>Flower Bunches</h6>
+      </div>
+      <div class="col-md-4">
+        <a href="Flowers in a Box.html"><img src="Assest/Images/Flowers in a Box/Logo.webp" alt=""></a>
+        <h6>Flowers in a Box</h6>
+      </div>
+      <div class="col-md-4">
+        <a href="Flowers in Vase.html"><img src="Assest/Images/Flowers in Vase/Logo.webp" alt=""></a>
+        <h6>Flowers in Vase</h6>
+      </div>
+    </div>
+  </div>
+</div>      
+
+<!--Update-->
+<section id="Update" class="p1">
+  <div>
+    <h4>SignUp</h4>
+    <p>Get Email-Updates For Updates and <span>Special Offers</span></p>
+  </div>
+  <div id="form">
+    <input type="text" placeholder="Enter your Email address">
+    <button>Sign Up</button>
+  </div>
+</section>
+
+<!--Footer-->
+<!--Footer->Container fluid-->
+  <div class="container-fluid" id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+              <div id="icon">
+              <img src="Assest/Images/Logo.png" alt="">
+              <h4>Contact</h4>
+                <a href=""><i class="fa fa-phone" aria-hidden="true">&emsp; Phone : 682575557</i></a>
+                <a href=""><i class="fa fa-envelope-open" aria-hidden="true">&emsp; Email : rubithadevip@gmail.com</i></a>
+                <a href=""><i class="fa fa-map-marker" aria-hidden="true">&emsp; Address : Happy Living, Dr.Radhakirishna road, Tatabad, Gandhipuram, Tamil Nadu 641012</i></a>
+              </div>
+              <div id="follow">
+              <h4>Follow Us</h4>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4" id="account">
+          <h4>My Account</h4>
+          <a href="">Sign In</a>
+          <a href="">View Cart</a>
+          <a href="">My Wishlist</a>
+          <a href="">Track My Order</a>
+          <a href="">Help</a>
+        </div>
+        <div class="col-md-4" id="map">
+          <div class="gmap_canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.216282951142!2d76.96113484954662!3d11.022393057582823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859d4a83a37a1%3A0xde494a6641056613!2sHAPPY%20LIVING%20WOMEN&#39;S%20PG!5e0!3m2!1sen!2sin!4v1674190753337!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;max-height:100%;max-width:100%; margin-top: 50px;}</style>
+        </div>
+      </div>
+    <div id="copyright">
+        <p>© Copyright reserved, Bloomy Flower. All rights reserved</p>
+    </div>
+  </div>
+</div>      
+
+<!--Bootstrap Javascript-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</body>
+</html>

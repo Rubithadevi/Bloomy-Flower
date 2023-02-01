@@ -1,0 +1,406 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+}
+/*Header*/
+#navbar #Logo{
+    width: 10%;
+    height: 5%;
+    float: left;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right top, #ec4a9f, #ae4091, #73357a, #3f275a, #161636);
+    box-shadow: 0px 3px 7px rgb(254, 102, 102);
+    padding: 1px 0px;
+    z-index: 999;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+#navbar li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+#navbar #icons{
+    color: black;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(19, 176, 19);
+}
+
+/*Banner*/
+
+@media only screen and (max-width: 600px) {
+    #home{
+        display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 45vh;
+    background:url("Assest/Images/Image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+    }
+    #home h3{
+        font-size: 45px;
+    }
+    #home span{
+        font-size: 10px;
+    }
+  }
+#home{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    background:url("Assest/Images/Image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+}
+#home h3{
+    font-size: 75px;
+}
+#home span{
+    font-size: 30px;
+}
+#home .btn{
+    background-color:rgb(3, 3, 89);
+    color: white;
+}
+#home .btn:hover{
+    background-color: rgb(209, 42, 97);
+}
+
+/*Features*/
+.p1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#feature #box{
+    width: 200px;
+    padding: 25px 15px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px rgb(221, 172, 221);
+    border-radius: 10px;
+    margin: 15px;
+}
+#feature #box:hover{
+    box-shadow: 20px 20px 20px rgb(223, 159, 223);
+}
+#feature #box img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 169px;
+    height: 150px;
+    padding: 5px;
+}
+#feature #box h6{
+    display: inline-block;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+#feature #box:nth-child(2) h6{
+    background-color: rgb(46, 46, 219);
+}
+#feature #box:nth-child(3) h6{
+    background-color: rgb(58, 155, 58);
+}
+#feature #box:nth-child(4) h6{
+    background-color: peru;
+}
+#feature #box:nth-child(5) h6{
+    background-color: plum;
+}
+#feature #box:nth-child(6) h6{
+    background-color: rgb(220, 82, 22);
+}
+/*Header2*/
+h2{
+    background-color: palevioletred;
+    box-shadow: 0px 3px 5px rgb(240, 163, 189);
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*About*/
+#about{
+    padding-top: 30px;
+}
+#about h3{
+    text-align: center;
+}
+#about p{
+    text-align-last: center;
+    text-align: justify;
+}
+
+/*Promises*/
+#promises img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px rgb(221, 172, 221);
+    border-radius: 10px;
+}
+#promises img:hover{
+    box-shadow: 20px 20px 20px rgb(223, 159, 223);
+}
+#promises p{
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(67, 3, 146);
+    text-align: center;
+}
+#promises p:hover{
+    text-shadow: 5px 5px 5px rgb(120, 43, 215);
+}
+
+/*Shop here*/
+#shop h2{
+    margin-top: 20px;
+}
+#shop img{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px rgb(221, 172, 221);
+}
+#shop img:hover{
+    box-shadow: 20px 20px 20px rgb(223, 159, 223);}
+#shop h6{
+    color: rgb(67, 3, 146);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+#shop h6:hover{
+    text-shadow: 5px 5px 5px rgb(120, 43, 215);}
+#contact{
+    background-color: palevioletred;
+    color: black;
+}
+.container-fluid i{
+    margin-top: 20px;
+    color: black;
+}
+.container-fluid p{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .card{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+/*Flowers*/
+#top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#top .card:hover{
+    box-shadow: 10px 10px 10px rgb(223, 159, 223);
+}
+#top .card{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(221, 172, 221);
+    border-radius: 10px;
+}
+#top .card img{
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+}
+#top .row{
+    margin-top: 20px;
+}
+#top #flower{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#top #flower #cart{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #ae4091;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    outline: none;
+}
+#top #flower #cart:hover{
+    background-color:#ec4a9f;
+    color: white;
+}
+#top #flower #wishlist{
+    cursor: pointer;
+    color: rgb(2, 2, 91);
+}
+#top #flower #share{
+    cursor: pointer;
+    color:rgb(2, 2, 91);
+    float: right;
+}
+#top #flower #share:hover{
+    color: rgb(19, 176, 19);
+}
+#top #flower #price {
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    justify-content: space-between;
+    background-color: #161636;
+    color:white;
+    border-radius: 5px;
+    outline: none;
+}
+#top #flower #price:hover{
+    background-color: #5a3c7d;
+}
+#top #flower h5{
+    font-size: 18px;
+}
+
+/*Update*/
+#Update{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(3, 3, 61);
+    color: white;
+    background-position: 20% 30%;
+    margin: 40px 0px;
+}
+#Update h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+#Update p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(163, 164, 165);
+}
+#Update p span{
+    color: rgb(177, 116, 3);
+}
+#Update #form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+#Update input{
+    height: 25px;
+    padding: 0px 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 20px;
+}
+#Update button{
+    background-color: rgb(43, 123, 43);
+    white-space: nowrap;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+#contact #icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+#contact #icon i{
+    padding-right: 20px;
+    cursor: pointer;
+}
+#contact #icon img{
+    width: 20%;
+    height: 15%;
+    margin: 10px 0px;
+}
+#contact #icon a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+#contact #follow{
+    margin-top: 20px;
+}
+#contact #follow i{
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#contact #account{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 20px 0px;
+}
+#contact #account a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+#contact #icon i:hover,
+#contact #account a:hover,
+#contact #follow i:hover{
+    color:rgb(170, 6, 77); 
+}
+footer #copyright{
+    width: 100%;
+    text-align: center;
+}
+footer #map{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#map .gmap_canvas{
+    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+
+}
